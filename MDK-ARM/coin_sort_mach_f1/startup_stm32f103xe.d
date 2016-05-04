@@ -1,0 +1,1 @@
+coin_sort_mach_f1\startup_stm32f103xe.o: startup_stm32f103xe.s
