@@ -4,7 +4,6 @@
 #include "tim.h"
 
 #include "drv_motor.h"
-
 /**
 * @brief def thread_push_id
 */
@@ -21,13 +20,13 @@ osMessageQId mesq_id;
 void thread_push_entry(void const * arg){
 	while(1){
 		osEvent e = osMessageGet(mesq_id,osWaitForever);
-		HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2);
 		switch(e.value.v){
 			case GPIO_PIN_0:
-				
+				//HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2);
 				//SW0 closed
 			  SW0_Close();
 			  PUSH0_Forward();
+			  //HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2);
 
 			  //wait to push back
 			  osSignalWait(signal_push_back,osWaitForever);
@@ -37,7 +36,7 @@ void thread_push_entry(void const * arg){
 			  //wait to sw open
 				osSignalWait(signal_sw_open,osWaitForever);
 				SW0_Open();
-        //HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2);
+        HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2);
 				break;
 
 			case GPIO_PIN_1:
@@ -48,7 +47,7 @@ void thread_push_entry(void const * arg){
 			  //wait to push back
 			  osSignalWait(signal_push_back,osWaitForever);
 				PUSH1_Back();
-			  
+			
 			  //wait to sw open
 				osSignalWait(signal_sw_open,osWaitForever);
 				SW1_Open();
@@ -62,11 +61,15 @@ void thread_push_entry(void const * arg){
 			  //wait to push back
 			  osSignalWait(signal_push_back,osWaitForever);
 				PUSH2_Back();
-			  
+			
 			  //wait to sw open
 				osSignalWait(signal_sw_open,osWaitForever);
 				SW2_Open();
 				break;
+			
+			case GPIO_PIN_13:
+				break;
 		}/*end of switch*/
+		
 	}
 }

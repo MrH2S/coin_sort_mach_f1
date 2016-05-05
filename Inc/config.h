@@ -4,10 +4,10 @@
 
 /**
 * @brief def pwm priority
-* @note  tim clock 8MHz ,tim 16bit:0--65535 ;8-1us  8000-1ms
+* @note  tim clock 8MHz
 */
-#define PWM_Period 40000
-#define PWM_Pulse  20000
+#define PWM_Period 4000
+#define PWM_Pulse  2000
 
 #define MesQ_Size 10
 
@@ -17,14 +17,17 @@
 /**
 * @note SW_PWM <= PUSH_PWM
 */
-#define MAX_SW0_PWM_CNT   450
-#define MAX_PUSH0_PWM_CNT 9976
+//10
+#define MAX_SW0_PWM_CNT   267
+#define MAX_PUSH0_PWM_CNT 8760
 
-#define MAX_SW1_PWM_CNT   900
-#define MAX_PUSH1_PWM_CNT 1000
+//5
+#define MAX_SW1_PWM_CNT   267
+#define MAX_PUSH1_PWM_CNT 11205
 
-#define MAX_SW2_PWM_CNT   900
-#define MAX_PUSH2_PWM_CNT 1000
+//1
+#define MAX_SW2_PWM_CNT   267
+#define MAX_PUSH2_PWM_CNT 8556
 /**********************signal def***********************/
 typedef enum {signal_push_back, //push back start
 							signal_sw_open    //sw open start

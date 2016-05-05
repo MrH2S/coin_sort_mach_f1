@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @file    stm32f1xx_it.c
+  * @file    stm32l0xx_it.c
   * @brief   Interrupt Service Routines.
   ******************************************************************************
   *
@@ -31,9 +31,9 @@
   ******************************************************************************
   */
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f1xx_hal.h"
-#include "stm32f1xx.h"
-#include "stm32f1xx_it.h"
+#include "stm32l0xx_hal.h"
+#include "stm32l0xx.h"
+#include "stm32l0xx_it.h"
 #include "cmsis_os.h"
 
 #include "config.h"
@@ -46,14 +46,14 @@
 /* External variables --------------------------------------------------------*/
 extern TIM_HandleTypeDef htim2;
 extern TIM_HandleTypeDef htim3;
-extern TIM_HandleTypeDef htim4;
+extern TIM_HandleTypeDef htim21;
 
 /******************************************************************************/
-/*            Cortex-M3 Processor Interruption and Exception Handlers         */ 
+/*            Cortex-M0+ Processor Interruption and Exception Handlers         */ 
 /******************************************************************************/
 
 /**
-* @brief This function handles Non maskable interrupt.
+* @brief This function handles Non maskable Interrupt.
 */
 void NMI_Handler(void)
 {
@@ -83,70 +83,6 @@ void HardFault_Handler(void)
 }
 
 /**
-* @brief This function handles Memory management fault.
-*/
-void MemManage_Handler(void)
-{
-  /* USER CODE BEGIN MemoryManagement_IRQn 0 */
-
-  /* USER CODE END MemoryManagement_IRQn 0 */
-  while (1)
-  {
-  }
-  /* USER CODE BEGIN MemoryManagement_IRQn 1 */
-
-  /* USER CODE END MemoryManagement_IRQn 1 */
-}
-
-/**
-* @brief This function handles Prefetch fault, memory access fault.
-*/
-void BusFault_Handler(void)
-{
-  /* USER CODE BEGIN BusFault_IRQn 0 */
-
-  /* USER CODE END BusFault_IRQn 0 */
-  while (1)
-  {
-  }
-  /* USER CODE BEGIN BusFault_IRQn 1 */
-
-  /* USER CODE END BusFault_IRQn 1 */
-}
-
-/**
-* @brief This function handles Undefined instruction or illegal state.
-*/
-void UsageFault_Handler(void)
-{
-  /* USER CODE BEGIN UsageFault_IRQn 0 */
-
-  /* USER CODE END UsageFault_IRQn 0 */
-  while (1)
-  {
-  }
-  /* USER CODE BEGIN UsageFault_IRQn 1 */
-
-  /* USER CODE END UsageFault_IRQn 1 */
-}
-
-/**
-* @brief This function handles Debug monitor.
-*/
-void DebugMon_Handler(void)
-{
-  /* USER CODE BEGIN DebugMonitor_IRQn 0 */
-
-  /* USER CODE END DebugMonitor_IRQn 0 */
-  while (1)
-  {
-  }
-  /* USER CODE BEGIN DebugMonitor_IRQn 1 */
-
-  /* USER CODE END DebugMonitor_IRQn 1 */
-}
-
-/**
 * @brief This function handles System tick timer.
 */
 void SysTick_Handler(void)
@@ -162,71 +98,61 @@ void SysTick_Handler(void)
 }
 
 /******************************************************************************/
-/* STM32F1xx Peripheral Interrupt Handlers                                    */
+/* STM32L0xx Peripheral Interrupt Handlers                                    */
 /* Add here the Interrupt Handlers for the used peripherals.                  */
 /* For the available peripheral interrupt handler names,                      */
-/* please refer to the startup file (startup_stm32f1xx.s).                    */
+/* please refer to the startup file (startup_stm32l0xx.s).                    */
 /******************************************************************************/
 
 /**
-* @brief This function handles EXTI line0 interrupt.
+* @brief This function handles EXTI line 0 and line 1 interrupts.
 */
-void EXTI0_IRQHandler(void)
+void EXTI0_1_IRQHandler(void)
 {
-  /* USER CODE BEGIN EXTI0_IRQn 0 */
+  /* USER CODE BEGIN EXTI0_1_IRQn 0 */
 
-  /* USER CODE END EXTI0_IRQn 0 */
+  /* USER CODE END EXTI0_1_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_0);
-  /* USER CODE BEGIN EXTI0_IRQn 1 */
-
-  /* USER CODE END EXTI0_IRQn 1 */
-}
-
-/**
-* @brief This function handles EXTI line1 interrupt.
-*/
-void EXTI1_IRQHandler(void)
-{
-  /* USER CODE BEGIN EXTI1_IRQn 0 */
-
-  /* USER CODE END EXTI1_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_1);
-  /* USER CODE BEGIN EXTI1_IRQn 1 */
+  /* USER CODE BEGIN EXTI0_1_IRQn 1 */
 
-  /* USER CODE END EXTI1_IRQn 1 */
+  /* USER CODE END EXTI0_1_IRQn 1 */
 }
 
 /**
-* @brief This function handles EXTI line2 interrupt.
+* @brief This function handles EXTI line 2 and line 3 interrupts.
 */
-void EXTI2_IRQHandler(void)
+void EXTI2_3_IRQHandler(void)
 {
-  /* USER CODE BEGIN EXTI2_IRQn 0 */
+  /* USER CODE BEGIN EXTI2_3_IRQn 0 */
 
-  /* USER CODE END EXTI2_IRQn 0 */
+  /* USER CODE END EXTI2_3_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_2);
-  /* USER CODE BEGIN EXTI2_IRQn 1 */
+  /* USER CODE BEGIN EXTI2_3_IRQn 1 */
 
-  /* USER CODE END EXTI2_IRQn 1 */
+  /* USER CODE END EXTI2_3_IRQn 1 */
 }
 
 /**
-* @brief This function handles EXTI line15--10 interrupt.
+* @brief This function handles EXTI line 4 to 15 interrupts.
 */
-void EXTI15_10_IRQHandler(void)
+void EXTI4_15_IRQHandler(void)
 {
-  /* USER CODE BEGIN EXTI2_IRQn 0 */
+  /* USER CODE BEGIN EXTI4_15_IRQn 0 */
 
-  /* USER CODE END EXTI2_IRQn 0 */
-  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_15);
-  /* USER CODE BEGIN EXTI2_IRQn 1 */
+  /* USER CODE END EXTI4_15_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_13);
+  /* USER CODE BEGIN EXTI4_15_IRQn 1 */
 
-  /* USER CODE END EXTI2_IRQn 1 */
+  /* USER CODE END EXTI4_15_IRQn 1 */
 }
 
-uint32_t CNT_TIM_0 = 0;
-uint32_t CNT_TIM_1 = 0;
-uint32_t CNT_TIM_2 = 0;
+/**
+* @brief static global var count tim interrupt
+*/
+uint32_t CNT_TIM_0 = 0;/*count tim2--push & sw 0*/
+uint32_t CNT_TIM_1 = 0;/*count tim3--push & sw 1*/
+uint32_t CNT_TIM_2 = 0;/*count tim4--push & sw 2*/
 
 /**
 * @brief This function handles TIM2 global interrupt.
@@ -248,7 +174,7 @@ void TIM2_IRQHandler(void)
 void TIM3_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM3_IRQn 0 */
-	CNT_TIM_1++;
+  CNT_TIM_1++;
   /* USER CODE END TIM3_IRQn 0 */
   HAL_TIM_IRQHandler(&htim3);
   /* USER CODE BEGIN TIM3_IRQn 1 */
@@ -257,17 +183,17 @@ void TIM3_IRQHandler(void)
 }
 
 /**
-* @brief This function handles TIM4 global interrupt.
+* @brief This function handles TIM21 global interrupt.
 */
-void TIM4_IRQHandler(void)
+void TIM21_IRQHandler(void)
 {
-  /* USER CODE BEGIN TIM4_IRQn 0 */
-	CNT_TIM_2++;
-  /* USER CODE END TIM4_IRQn 0 */
-  HAL_TIM_IRQHandler(&htim4);
-  /* USER CODE BEGIN TIM4_IRQn 1 */
+  /* USER CODE BEGIN TIM21_IRQn 0 */
+  CNT_TIM_2++;
+  /* USER CODE END TIM21_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim21);
+  /* USER CODE BEGIN TIM21_IRQn 1 */
 
-  /* USER CODE END TIM4_IRQn 1 */
+  /* USER CODE END TIM21_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */
@@ -288,11 +214,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			CNT_EXTI0++;
 			if(CNT_EXTI0 >= MAX_Coin_CNT){
 				CNT_EXTI0 = 0;
-				//HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2);
+				HAL_GPIO_TogglePin(LD2_GPIO_Port,LD2_Pin);
 				//osMessagePut(mesq_id,GPIO_PIN_0,0);
 			}
 			break;
-
+			
 		case GPIO_PIN_1:
 			CNT_EXTI1++;
 			if(CNT_EXTI1 >= MAX_Coin_CNT){
@@ -309,9 +235,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			}
 			break;
 			
-		case GPIO_PIN_15:
-			//HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2); //reached!
-			osMessagePut(mesq_id,GPIO_PIN_0,0);
+		case GPIO_PIN_13:
+			HAL_GPIO_TogglePin(LD2_GPIO_Port,LD2_Pin);
+			//osMessagePut(mesq_id,GPIO_PIN_0,0);//reachd!
+			break;
 	}/*END of switch*/
 }
 

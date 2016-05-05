@@ -18,3 +18,7 @@ coin_sort_mach_f1\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include
 coin_sort_mach_f1\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 coin_sort_mach_f1\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 coin_sort_mach_f1\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+coin_sort_mach_f1\freertos.o: ../Inc/config.h
+coin_sort_mach_f1\freertos.o: ../Inc/thread_push.h
+coin_sort_mach_f1\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+coin_sort_mach_f1\freertos.o: ../Drivers/CMSIS/Include/core_cmFunc.h
