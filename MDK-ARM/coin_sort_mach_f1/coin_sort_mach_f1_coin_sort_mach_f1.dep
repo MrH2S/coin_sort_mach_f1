@@ -323,7 +323,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x56A0A05B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x56A0A05B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x56A0A05B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x56A0A05B)
-F (../Src/gpio.c)(0x5729F661)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\gpio.o --omf_browse coin_sort_mach_f1\gpio.crf --depend coin_sort_mach_f1\gpio.d)
+F (../Src/gpio.c)(0x572B24F7)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\gpio.o --omf_browse coin_sort_mach_f1\gpio.crf --depend coin_sort_mach_f1\gpio.d)
 I (../Inc/gpio.h)(0x5729F662)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x56A0A05B)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5729F664)
@@ -378,7 +378,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x56A0A05B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x56A0A05B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x56A0A05B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x56A0A05B)
-F (../Src/freertos.c)(0x5729F662)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\freertos.o --omf_browse coin_sort_mach_f1\freertos.crf --depend coin_sort_mach_f1\freertos.d)
+F (../Src/freertos.c)(0x57270C72)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\freertos.o --omf_browse coin_sort_mach_f1\freertos.crf --depend coin_sort_mach_f1\freertos.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x56A09961)
 I (D:\app\dev_tools\mdk\ARM\ARMCC\include\stddef.h)(0x55AEF5F2)
 I (D:\app\dev_tools\mdk\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
@@ -398,7 +398,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x56A09961)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x56A09961)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x56A09961)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x56A09961)
-F (../Src/main.c)(0x5729F665)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\main.o --omf_browse coin_sort_mach_f1\main.crf --depend coin_sort_mach_f1\main.d)
+F (../Src/main.c)(0x572B5091)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\main.o --omf_browse coin_sort_mach_f1\main.crf --depend coin_sort_mach_f1\main.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x56A0A05B)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5729F664)
 I (../Inc/mxconstants.h)(0x5729F665)
@@ -442,7 +442,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x56A09961)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x56A09961)
 I (../Inc/tim.h)(0x5729F663)
 I (../Inc/gpio.h)(0x5729F662)
-F (../Src/stm32f1xx_it.c)(0x5729F84B)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\stm32f1xx_it.o --omf_browse coin_sort_mach_f1\stm32f1xx_it.crf --depend coin_sort_mach_f1\stm32f1xx_it.d)
+F (../Src/stm32f1xx_it.c)(0x572B50BF)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\stm32f1xx_it.o --omf_browse coin_sort_mach_f1\stm32f1xx_it.crf --depend coin_sort_mach_f1\stm32f1xx_it.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x56A0A05B)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5729F664)
 I (../Inc/mxconstants.h)(0x5729F665)
@@ -485,9 +485,9 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x56A09961)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x56A09961)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x56A09961)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x56A09961)
-I (../Inc/config.h)(0x5729F681)
+I (../Inc/config.h)(0x572B5091)
 I (../Inc/thread_push.h)(0x57232D22)
-F (../Src/tim.c)(0x5729F663)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\tim.o --omf_browse coin_sort_mach_f1\tim.crf --depend coin_sort_mach_f1\tim.d)
+F (../Src/tim.c)(0x5729FD4B)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\tim.o --omf_browse coin_sort_mach_f1\tim.crf --depend coin_sort_mach_f1\tim.d)
 I (../Inc/tim.h)(0x5729F663)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x56A0A05B)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5729F664)
@@ -515,7 +515,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x56A0A05B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x56A0A05B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x56A0A05B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x56A0A05B)
-F (..\Src\tim_isr.c)(0x5729F758)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\tim_isr.o --omf_browse coin_sort_mach_f1\tim_isr.crf --depend coin_sort_mach_f1\tim_isr.d)
+I (../Inc/config.h)(0x572B5091)
+F (..\Src\tim_isr.c)(0x572B2DE9)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\tim_isr.o --omf_browse coin_sort_mach_f1\tim_isr.crf --depend coin_sort_mach_f1\tim_isr.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x56A0A05B)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5729F664)
 I (../Inc/mxconstants.h)(0x5729F665)
@@ -542,7 +543,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x56A0A05B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x56A0A05B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x56A0A05B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x56A0A05B)
-I (../Inc/config.h)(0x5729F681)
+I (../Inc/config.h)(0x572B5091)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x56A09961)
 I (D:\app\dev_tools\mdk\ARM\ARMCC\include\stddef.h)(0x55AEF5F2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x56A09961)
@@ -561,7 +562,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x56A09961
 I (../Inc/thread_push.h)(0x57232D22)
 I (../Inc/drv_motor.h)(0x5729F74C)
 I (../Inc/tim.h)(0x5729F663)
-F (..\Src\thread_push.c)(0x5729F710)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\thread_push.o --omf_browse coin_sort_mach_f1\thread_push.crf --depend coin_sort_mach_f1\thread_push.d)
+F (..\Src\thread_push.c)(0x572B517B)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include --C99-I D:\workspace_root\coin_sort_mach_f1\MDK-ARM\RTE-I D:\app\dev_tools\mdk\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\app\dev_tools\mdk\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o coin_sort_mach_f1\thread_push.o --omf_browse coin_sort_mach_f1\thread_push.crf --depend coin_sort_mach_f1\thread_push.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x56A09961)
 I (D:\app\dev_tools\mdk\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
 I (D:\app\dev_tools\mdk\ARM\ARMCC\include\stddef.h)(0x55AEF5F2)
@@ -581,7 +582,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x56A09961)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x56A09961)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x56A09961)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x56A09961)
-I (../Inc/config.h)(0x5729F681)
+I (../Inc/config.h)(0x572B5091)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x56A0A05B)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5729F664)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x56A0A05B)

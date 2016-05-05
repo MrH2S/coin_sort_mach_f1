@@ -27,3 +27,4 @@ coin_sort_mach_f1\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash
 coin_sort_mach_f1\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 coin_sort_mach_f1\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 coin_sort_mach_f1\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+coin_sort_mach_f1\tim.o: ../Inc/config.h

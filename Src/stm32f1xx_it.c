@@ -210,12 +210,39 @@ void EXTI2_IRQHandler(void)
 }
 
 /**
+* @brief This function handles EXTI line 9-5 interrupt.
+*/
+void EXTI9_5_IRQHandler(void)
+{
+  /* USER CODE BEGIN EXTI5_IRQn 0 */
+  //HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2);//NOT reached!
+  /* USER CODE END EXTI5_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_5);
+  /* USER CODE BEGIN EXTI5_IRQn 1 */
+
+  /* USER CODE END EXTI5_IRQn 1 */
+}
+
+/**
+* @brief This function handles EXTI line 9-5 interrupt.
+*/
+void EXTI15_10_IRQHandler(void)
+{
+  /* USER CODE BEGIN EXTI5_IRQn 0 */
+  //HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2);//NOT reached!
+  /* USER CODE END EXTI5_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_15);
+  /* USER CODE BEGIN EXTI5_IRQn 1 */
+
+  /* USER CODE END EXTI5_IRQn 1 */
+}
+
+/**
 * @brief static global var count tim interrupt
 */
 uint32_t CNT_TIM_0 = 0;/*count tim2--push & sw 0*/
 uint32_t CNT_TIM_1 = 0;/*count tim3--push & sw 1*/
 uint32_t CNT_TIM_2 = 0;/*count tim4--push & sw 2*/
-
 
 /**
 * @brief This function handles TIM2 global interrupt.
@@ -277,7 +304,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			CNT_EXTI0++;
 			if(CNT_EXTI0 >= MAX_Coin_CNT){
 				CNT_EXTI0 = 0;
-				//HAL_GPIO_TogglePin(LD2_GPIO_Port,LD2_Pin);
+				HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2);
 				//osMessagePut(mesq_id,GPIO_PIN_0,0);
 			}
 			break;
@@ -298,10 +325,13 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			}
 			break;
 
-		case GPIO_PIN_13:
-			//HAL_GPIO_TogglePin(LD2_GPIO_Port,LD2_Pin);
+		case GPIO_PIN_5:
+			HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2);
 			//osMessagePut(mesq_id,GPIO_PIN_0,0);//reachd!
 			break;
+		case GPIO_PIN_15:
+			HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2); //reached!
+			osMessagePut(mesq_id,GPIO_PIN_0,0);
 	}/*END of switch*/
 }
 

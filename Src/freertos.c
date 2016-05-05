@@ -36,19 +36,22 @@
 #include "task.h"
 #include "cmsis_os.h"
 
+#include "config.h"
+#include "thread_push.h"
+
 /* USER CODE BEGIN Includes */     
 
 /* USER CODE END Includes */
 
 /* Variables -----------------------------------------------------------------*/
-osThreadId defaultTaskHandle;
+//osThreadId defaultTaskHandle;
 
 /* USER CODE BEGIN Variables */
 
 /* USER CODE END Variables */
 
 /* Function prototypes -------------------------------------------------------*/
-void StartDefaultTask(void const * argument);
+//void StartDefaultTask(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -79,30 +82,38 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
+	/*
   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+  */
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
+	osThreadDef(thread_push,thread_push_entry,osPriorityRealtime,1,128);
+	thread_push_id    = osThreadCreate(osThread(thread_push),NULL);
   /* USER CODE END RTOS_THREADS */
-
+	
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
+	osMessageQDef(mesq,MesQ_Size,uint32_t);
+	mesq_id           = osMessageCreate(osMessageQ(mesq),thread_push_id); 
   /* USER CODE END RTOS_QUEUES */
 }
 
+
 /* StartDefaultTask function */
-void StartDefaultTask(void const * argument)
-{
+//void StartDefaultTask(void const * argument)
+//{
 
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
-  for(;;)
-  {
-    osDelay(1);
-  }
+//  {
+		//HAL_GPIO_TogglePin(LD2_GPIO_Port,LD2_Pin);
+//    osDelay(1);
+//  }
   /* USER CODE END StartDefaultTask */
-}
+//}
+
 
 /* USER CODE BEGIN Application */
      
