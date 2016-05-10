@@ -38,6 +38,7 @@ void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim){
 			if(CNT_TIM_0 == MAX_SW0_PWM_CNT + MAX_PUSH0_PWM_CNT*2){
 				CNT_TIM_0 = 0;
 				SW0_PWM_Stop();
+				osSignalSet(thread_push_id,signal_thread_push);
 			}	
 		/*
 			switch(CNT_TIM_0){
@@ -64,18 +65,18 @@ void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim){
 		  if(CNT_TIM_1 == MAX_SW1_PWM_CNT){
 				SW1_PWM_Stop();
 			}
-			if(CNT_TIM_1 == MAX_SW1_PWM_CNT + MAX_PUSH1_PWM_CNT*2){
-				CNT_TIM_1 = 0;
-				SW1_PWM_Stop();
-			}
 			if(CNT_TIM_1 == MAX_PUSH1_PWM_CNT){
 				PUSH1_PWM_Stop();
 				osSignalSet(thread_push_id,signal_push_back);
 			}
 			if(CNT_TIM_1 == MAX_PUSH1_PWM_CNT*2){
-				
 				PUSH1_PWM_Stop();
 				osSignalSet(thread_push_id,signal_sw_open);
+			}
+			if(CNT_TIM_1 == MAX_SW1_PWM_CNT + MAX_PUSH1_PWM_CNT*2){
+				CNT_TIM_1 = 0;
+				SW1_PWM_Stop();
+				osSignalSet(thread_push_id,signal_thread_push);
 			}
 			break;/*end of case TIM3*/
 		
@@ -83,18 +84,18 @@ void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim){
 		  if(CNT_TIM_2 == MAX_SW2_PWM_CNT){
 				SW2_PWM_Stop();
 			}
-			if(CNT_TIM_2 == MAX_SW2_PWM_CNT + MAX_PUSH2_PWM_CNT*2){
-				CNT_TIM_2 = 0;
-				SW2_PWM_Stop();
-			}	
 			if(CNT_TIM_2 == MAX_PUSH2_PWM_CNT){
 				PUSH2_PWM_Stop();
 				osSignalSet(thread_push_id,signal_push_back);
 			}
 			if(CNT_TIM_2 == MAX_PUSH2_PWM_CNT*2){
-				
 				PUSH2_PWM_Stop();
 				osSignalSet(thread_push_id,signal_sw_open);
+			}
+			if(CNT_TIM_2 == MAX_SW2_PWM_CNT + MAX_PUSH2_PWM_CNT*2){
+				CNT_TIM_2 = 0;
+				SW2_PWM_Stop();
+				osSignalSet(thread_push_id,signal_thread_push);
 			}
 			break;/*end of case TIM4*/
 	}

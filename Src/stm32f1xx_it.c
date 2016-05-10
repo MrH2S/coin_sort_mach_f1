@@ -215,15 +215,18 @@ void EXTI2_IRQHandler(void)
 */
 void EXTI15_10_IRQHandler(void)
 {
-  /* USER CODE BEGIN EXTI2_IRQn 0 */
+  /* USER CODE BEGIN EXTI15_10_IRQn 0 */
 
-  /* USER CODE END EXTI2_IRQn 0 */
+  /* USER CODE END EXTI15_10_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_15);
-  /* USER CODE BEGIN EXTI2_IRQn 1 */
+  /* USER CODE BEGIN EXTI15_10_IRQn 1 */
 
-  /* USER CODE END EXTI2_IRQn 1 */
+  /* USER CODE END EXTI15_10_IRQn 1 */
 }
 
+/**
+* @brief Count tim event tims
+*/
 uint32_t CNT_TIM_0 = 0;
 uint32_t CNT_TIM_1 = 0;
 uint32_t CNT_TIM_2 = 0;
@@ -286,10 +289,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	switch(GPIO_Pin){
 		case GPIO_PIN_0:
 			CNT_EXTI0++;
-			if(CNT_EXTI0 >= MAX_Coin_CNT){
+		  if(CNT_EXTI0 >= MAX_Coin_CNT){
 				CNT_EXTI0 = 0;
-				//HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2);
-				//osMessagePut(mesq_id,GPIO_PIN_0,0);
+				osMessagePut(mesq_id,GPIO_PIN_0,0);
 			}
 			break;
 
@@ -313,6 +315,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			//HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2); //reached!
 			osMessagePut(mesq_id,GPIO_PIN_0,0);
 	}/*END of switch*/
+	
+	HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_2);
 }
 
 /* USER CODE END 1 */

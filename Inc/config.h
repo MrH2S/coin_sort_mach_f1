@@ -9,28 +9,29 @@
 #define PWM_Period 4000
 #define PWM_Pulse  2000
 
-#define MesQ_Size 10
+#define MesQ_Size 20
 
-#define MAX_Coin_CNT 5
+#define MAX_Coin_CNT 10
 
 
 /**
 * @note SW_PWM <= PUSH_PWM
 */
 //10
-#define MAX_SW0_PWM_CNT   267
-#define MAX_PUSH0_PWM_CNT 8760
+#define MAX_SW0_PWM_CNT   400
+#define MAX_PUSH0_PWM_CNT 10100
 
 //5
-#define MAX_SW1_PWM_CNT   267
+#define MAX_SW1_PWM_CNT   400
 #define MAX_PUSH1_PWM_CNT 11205
 
 //1
-#define MAX_SW2_PWM_CNT   267
+#define MAX_SW2_PWM_CNT   400
 #define MAX_PUSH2_PWM_CNT 8556
 /**********************signal def***********************/
 typedef enum {signal_push_back, //push back start
-							signal_sw_open    //sw open start
+							signal_sw_open  ,  //sw open start
+	            signal_thread_push //unlock thread push entry
 						 } signal;
 
 /**********************footprint map********************/

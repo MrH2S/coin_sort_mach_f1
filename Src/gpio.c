@@ -85,11 +85,13 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 	
+	/*Configure Button*/
 	GPIO_InitStruct.Pin  = GPIO_PIN_15;
 	GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
 	GPIO_InitStruct.Pull = GPIO_PULLUP;
 	HAL_GPIO_Init(GPIOA,&GPIO_InitStruct);
 	
+	/*Configure LED*/
 	GPIO_InitStruct.Pin  = GPIO_PIN_2;
 	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
 	GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -97,7 +99,7 @@ void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, en0_Pin|en1_Pin|en2_Pin|en3_Pin 
-                          |en4_Pin|en5_Pin, GPIO_PIN_RESET);
+                          |en4_Pin|en5_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, dir0_Pin|dir1_Pin|dir2_Pin|dir3_Pin 

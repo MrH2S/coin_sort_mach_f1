@@ -93,6 +93,8 @@ void MX_FREERTOS_Init(void) {
 	thread_push_id    = osThreadCreate(osThread(thread_push),NULL);
   /* USER CODE END RTOS_THREADS */
 	
+	osSignalSet(thread_push_id,signal_thread_push);
+	
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
 	osMessageQDef(mesq,MesQ_Size,uint32_t);

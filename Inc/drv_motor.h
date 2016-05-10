@@ -16,9 +16,9 @@
 
 /**
 * @brief close sw0
-* @step  enable drv  of steper motor,
-*				 mesure dir  of steper motor,
-*        start  step of steper motor, 
+* @optflow  enable drv  of steper motor,
+*				    mesure dir  of steper motor,
+*           start  step of steper motor, 
 */
 #define SW0_Close() do{\
 	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);\
